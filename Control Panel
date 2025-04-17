@@ -1,0 +1,36 @@
+import numpy as np
+import PORTAL_APPROX as PORTAL
+import CANTI_APPROX as CANTI
+
+# ForceList = np.insert(np.array([26.04, 61.75, 92.62, 138.24]), 0, np.nan)  # bot to top
+# BuildingHeightList = np.array([4.5, 3.5, 3.5, 3.5])  # bot to top
+# BuildingSpanList = np.array([6, 5, 6, 5, 6, 5])  # left to right
+# NanList = None  # (x,y) coordinates of the NaN values
+# Name = "Frame1"
+
+ForceList = np.insert(np.array([2.73, 6.49, 9.72, 14.50]), 0, np.nan)  # bot to top
+BuildingHeightList = np.array([4.5, 3.5, 3.5, 3.5])  # bot to top
+BuildingSpanList = np.array([5,5,5,5,6,6,6,6])  # left to right
+NanList = None  # (x,y) coordinates of the NaN values
+Name = "Framec"
+
+PORTAL.PORTALCALCULTATION(
+    Name,
+    BuildingHeightList,
+    BuildingSpanList,
+    NanList,
+    ForceList,
+    subfolder="Portal",
+    plot=True,
+    screenshot=True,
+)
+CANTI.CANTICALCULATION(
+    Name,
+    BuildingHeightList,
+    BuildingSpanList,
+    NanList,
+    ForceList,
+    subfolder="Canti",
+    plot=True,
+    screenshot=True,
+)
