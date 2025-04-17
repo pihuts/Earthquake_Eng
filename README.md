@@ -45,7 +45,7 @@ Additional dependencies are listed in `requirements.txt`.
 
 3. **Output Files**
    - CSV files containing moment, shear, and axial forces data
-   - HTML files in the `Beams` folder showing LaTeX equations and calculations
+   - HTML files in the `Beam` folder showing LaTeX equations and calculations
    - Screenshot images in the `Solutions` folder (or custom named folder)
    - Structured array outputs with force distributions
 
